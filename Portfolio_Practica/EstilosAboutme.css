@@ -1,0 +1,87 @@
+﻿#About-me {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, #212529, #343a40); /* Cambia el angulo del gradiente */
+    animation: gradientAnimation 10s infinite linear; /* Cambia la direccion a linear */
+    height: 100vh;
+}
+
+/*efectos*/
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+
+
+.Contenedor {
+    display: flex;
+    flex-direction: column; /* Apila los elementos en una columna */
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imagen-circular {
+    border-radius: 50%;
+}
+
+.ContenedorButon {
+    text-align: center; /* Centra el boton */
+    margin-top: 10px; /* Ajusta el margen superior segun sea necesario */
+}
+
+.about {
+    text-align: center; /* Centra el contenido de 'about' */
+    margin-top: 20px; /* Ajusta el margen superior segun sea necesario */
+}
+
+    .about h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 30;
+        color: #097f;
+        margin-bottom: 10px; /* Ajusta el margen inferior segun sea necesario */
+    }
+
+    .about p {
+        margin-bottom: 20px; /* Ajusta el margen inferior segun sea necesario */
+    }
+
+    .about h2 {
+        font-weight: 20;
+        margin-bottom: 10px; /* Ajusta el margen inferior segun sea necesario */
+    }
+    .about h3{
+        color: white;
+        margin-bottom: 10px;
+    }
+    
+    .about ul {
+        list-style: none; /* Elimina los puntos del listado */
+        padding: 0; /* Elimina el relleno predeterminado del listado */
+    }
+
+    .about li {
+        margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario */
+    }
+   
+
+
+    /*atributos compuestos*/
+    .about article,
+    .about h1,
+    .about p,
+    .about h2,
+    .about ul {
+        color: white;
+        text-align: center;
+    }
+
